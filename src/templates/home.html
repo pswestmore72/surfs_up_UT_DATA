@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <h1> Welcome to the Climate Analysis API! </h1>
+    <br>
+    <br>
+    <br>
+    <h2> Available routes:
+        {% for route in data %}
+            <button>
+            <p>
+                    <a href="http://127.0.0.1:3000/api/v1.0/{{route[0]}}">  {{route[0]}}  </a>
+                </p>
+            </button>
+        {% endfor %}
+    </h2>
+</html>
